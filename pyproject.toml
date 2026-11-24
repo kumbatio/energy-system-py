@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kumbatio-energy"
+version = "0.1.0"
+description = "Zero-dependency Python reference port of the Kumbatio Energy Model specification (SPEC.md), verified against conformance.json."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [{ name = "Dominikos Pritis", email = "hello@kumbat.io" }]
+keywords = ["accessibility", "neurodivergent", "adhd", "cognitive-load", "energy-state", "coga"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://kumbat.io"
+Repository = "https://github.com/kumbatio/energy-system-py"
+Documentation = "https://docs.kumbat.io/docs/energy-system"
+Specification = "https://github.com/kumbatio/energy-system/blob/main/SPEC.md"
+
+[tool.setuptools.packages.find]
+include = ["kumbatio_energy*"]
